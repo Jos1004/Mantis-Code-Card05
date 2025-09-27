@@ -1,0 +1,139 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 920px;
+    height: 490px;
+    border-radius: 8px;
+}
+
+.card{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    border-radius: 8px;
+    width: 307px;
+    height: 490px;
+    gap: 55px;
+}
+
+.card-body{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+    width: 70%;
+    height: 300px;
+    margin: 40px 0 0 0;
+}
+
+h1{
+    font-weight: 500;
+    color: #F2F2F2;
+    margin: 0;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 40px;
+}
+
+p{
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: "Lexend Deca", sans-serif;
+    opacity: 75%;
+    letter-spacing: 0.5px;
+    width: 95%;
+}
+
+.card-footer{
+    width: 70%;
+    height: 47px;
+    margin: 0;
+}
+
+#c1{
+    background-color: #E28625;
+}
+
+#c2{
+    background-color: #006971;
+}
+
+#c3{
+    background-color: #004140;
+}
+
+img{
+    width: 63px;
+    height:40px;
+    margin: 0;
+}
+
+input{
+    width: 144px;
+    height: 47px;
+    border-radius: 25px;
+    background: #F2F2F2;
+    font-size: 14px;
+    font-family: "Lexend Deca", sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover{
+    background: none;
+    border: #F2F2F2 solid 2px;
+    color: #F2F2F2;
+}
+
+#btn1{
+     color: #E28625;
+}
+#btn2{
+    color: #006971;
+}
+#btn3{
+    color: #004140;
+}
+
+@media (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 90em;
+        width: 327px;
+        transform: translateY(28em);
+    }
+
+    .card{
+        height: 440px;
+        width: 327px;
+        gap: 8px;
+    }
+
+    .card-body{
+        height: 295px;
+    }
+
+    h1{
+        margin: 8px 0 0 0;
+    }
+
+}
